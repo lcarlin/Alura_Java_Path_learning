@@ -1,0 +1,14 @@
+<!-- 
+<%
+String nomeEmpresa = (String)request.getAttribute("empresa");
+System.out.println(nomeEmpresa);
+%>
+-->
+<html> 
+	<body>
+	<!-- 	Empresa <% out.println(nomeEmpresa); %> Criada com sucesso1|  --> 
+	 <!--   Empresa <%= nomeEmpresa %> Successfully created on this date. -->
+	 Empresa ${ empresa } Cadastrada com muito suiceisso
+	  
+	</body>
+</html>

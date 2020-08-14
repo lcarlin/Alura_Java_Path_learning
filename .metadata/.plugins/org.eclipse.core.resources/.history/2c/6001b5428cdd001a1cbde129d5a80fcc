@@ -1,0 +1,12 @@
+<%
+String nomeEmpresa = "P!r0c4#93 - bucet@69";
+System.out.println(nomeEmpresa);
+%>
+<html> 
+	<body>
+	<!-- 
+		 Empresa <% out.println(nomeEmpresa); %> Criada com sucesso1|
+	 --> 
+	 Empresa <%= nomeEmpresa %> Successfully created on this date. 
+	</body>
+</html>

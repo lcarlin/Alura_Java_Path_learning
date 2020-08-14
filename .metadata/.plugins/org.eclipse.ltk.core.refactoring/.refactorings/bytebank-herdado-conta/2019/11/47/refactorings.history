@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Cliente.java&apos; to &apos;java-io/src/br.com.alura.java.io.teste&apos;&#x0D;&#x0A;- Original project: &apos;bytebank-herdado-conta&apos;&#x0D;&#x0A;- Destination element: &apos;java-io/src/br.com.alura.java.io.teste&apos;&#x0D;&#x0A;- Original element: &apos;br.com.bytebank.banco.modelo.Cliente.java&apos;" description="Copy compilation unit" destination="=java-io/src&lt;br.com.alura.java.io.teste" element1="/src&lt;br.com.bytebank.banco.modelo{Cliente.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1573999638943" units="1" version="1.0"/>
+</session>

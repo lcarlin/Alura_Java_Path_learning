@@ -1,0 +1,4 @@
+Teste de escrita de arquivo 
+uma nova linhas
+uma nova linhas
+Final do arquivo 

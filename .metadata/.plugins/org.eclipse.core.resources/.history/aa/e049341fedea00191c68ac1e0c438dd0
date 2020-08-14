@@ -1,0 +1,18 @@
+
+public class TesteConexao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conexao con = null ; 
+		try {
+			Conexao con = new Conexao() ;
+			con.leDados();
+		} catch (IllegalStateException ex) {
+			System.out.println("Erro de connecction");
+		} finally {
+			con.fecha();
+		}
+
+	}
+
+}

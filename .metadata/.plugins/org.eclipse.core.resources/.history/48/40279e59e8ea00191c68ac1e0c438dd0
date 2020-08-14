@@ -1,0 +1,12 @@
+
+public class TesteSaca {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta conta = new ContaCorrente(123, 321) ; 
+		conta.deposita(200); 
+		conta.saca(200);
+
+	}
+
+}
