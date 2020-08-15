@@ -16,7 +16,7 @@ import br.com.alura.gerenciador.modelo.Empresa;
 /**
  * Servlet implementation class ListaEmpresasServlet
  */
-@WebServlet("/listaEmpresas")
+// @WebServlet("/listaEmpresas")
 public class ListaEmpresasServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

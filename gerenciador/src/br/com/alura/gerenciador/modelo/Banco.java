@@ -17,8 +17,18 @@ public class Banco {
 		empresa2.setId(chaveSequencial++);
 		empresa2.setNome("bucet@#69");
 		
+		Empresa empresa3 = new Empresa () ;
+		empresa3.setId(chaveSequencial++);
+		empresa3.setNome("C4r410#93");
+		
+		Empresa empresa4 = new Empresa () ;
+		empresa4.setId(chaveSequencial++);
+		empresa4.setNome("Sh4w4sk4#51");
+		
 		lista.add(empresa);
 		lista.add(empresa2);
+		lista.add(empresa3);
+		lista.add(empresa4);
 		
 	}
 
