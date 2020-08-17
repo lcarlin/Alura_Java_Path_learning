@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Administrador"/>
-    <fullyQualifiedTypeName name="FuncionarioAutenticavel"/>
-    <fullyQualifiedTypeName name="Autenticavel"/>
-    <fullyQualifiedTypeName name="AutenticacaoUtil"/>
-    <fullyQualifiedTypeName name="Tributavel"/>
-    <fullyQualifiedTypeName name="ContaCorrente"/>
-    <fullyQualifiedTypeName name="SeguroDeVida"/>
     <fullyQualifiedTypeName name="CalculadorDeImpopsto"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaPoupanca"/>
@@ -52,7 +45,6 @@
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="br.com.alura.gerenciador.servlet.Empresa"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.RemoveEmpresa"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.modelo.Banco"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.modelo.Usuario"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="javax.servlet.Filter"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebFilter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.http.client.fluent.Form"/>
+    <fullyQualifiedTypeName name="org.apache.http.client.fluent.Request"/>
 </qualifiedTypeNameHistroy>

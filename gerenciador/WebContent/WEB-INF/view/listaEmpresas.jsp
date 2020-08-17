@@ -11,8 +11,11 @@
 <title>Java Standard TagLib.</title>
 </head>
 <body>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+		<c:import url="logout-parcia.jsp" />
 
+ 		Usuário LOggaddo: ${usuarioLogado.login}
+ 		<br><br><br>
+     
         <c:if test= "${not empty empresa}">
             Empresa ${ empresa } cadastrada com sucesso!
         </c:if>
