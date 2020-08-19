@@ -10,6 +10,13 @@ public class Produto {
 		this.nome = nome ; 
 		this.descricao = descricao ; 
 	}
+	public Produto(Integer id, String nome , String descricao ) {
+		// TODO Auto-generated constructor stub
+		super() ; 
+		this.id = id ; 
+		this.nome = nome ; 
+		this.descricao = descricao ; 
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -31,7 +38,7 @@ public class Produto {
 	
 	@Override
 	public String toString () {
-		return String.format("E o produto que acabou de ser a criadofoi : %d , %s, %s", this.id, this.nome, this.descricao);
+		return String.format("E o produto é : %d , %s, %s", this.id, this.nome, this.descricao);
 	}
 
 }
