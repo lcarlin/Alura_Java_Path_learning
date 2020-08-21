@@ -10,7 +10,7 @@ public class ContaDao {
 
 	public ContaDao() {
 		try {
-			this.cnn = DriverManager.getConnection("mysql://localhost/alura_jdbc", "root", "");
+			this.cnn = DriverManager.getConnection("jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC", "root", "P!r0c4#93");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
