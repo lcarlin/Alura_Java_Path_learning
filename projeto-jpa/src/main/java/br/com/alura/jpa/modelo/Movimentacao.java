@@ -12,7 +12,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.NamedQuery;
+
+@NamedQuery(name="mediaDiariaMovimentacoes", 
+      query="select new br.com.alura.jpa.modelo.MediaComData(avg(m.valor), day(m.data), month(m.data)) from Movimentacao m group by day(m.data), month(m.data), year(m.data)")
 
 @Entity
 public class Movimentacao {
@@ -75,6 +78,14 @@ public class Movimentacao {
 
 	public void setCategorias(List<Categoria> categorias) {
 		this.categorias = categorias;
+	}
+
+//	public String getCategorias() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+	public List<Categoria> getCategorias() {
+		return categorias;
 	}
 
 

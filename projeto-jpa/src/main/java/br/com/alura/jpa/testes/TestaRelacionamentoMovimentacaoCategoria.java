@@ -23,22 +23,22 @@ public class TestaRelacionamentoMovimentacaoCategoria {
 		conta.setId(2L);
 		
 		
-		Movimentacao movimenracao = new Movimentacao() ; 
-		movimenracao.setDescricao("Viagem A SP ");
-		movimenracao.setTipoMovimentacao(TipoMovimentacao.SAIDA);
-		movimenracao.setData(LocalDateTime.now());
-		movimenracao.setValor(new BigDecimal(1500.01));
-		movimenracao.setCategorias(Arrays.asList(categoria, categoria2)) ; 
-		movimenracao.setConta(conta);
+		Movimentacao movimentacao = new Movimentacao() ; 
+		movimentacao.setDescricao("Viagem A SP ");
+		movimentacao.setTipoMovimentacao(TipoMovimentacao.SAIDA);
+		movimentacao.setData(LocalDateTime.now());
+		movimentacao.setValor(new BigDecimal(1500.01));
+		movimentacao.setCategorias(Arrays.asList(categoria, categoria2)) ; 
+		movimentacao.setConta(conta);
 		
 
-		Movimentacao movimenracao2 = new Movimentacao() ; 
-		movimenracao2.setDescricao("Viagem A DF ");
-		movimenracao2.setTipoMovimentacao(TipoMovimentacao.SAIDA);
-		movimenracao2.setData(LocalDateTime.now());
-		movimenracao2.setValor(new BigDecimal(1403.02));
-		movimenracao2.setCategorias(Arrays.asList(categoria, categoria2)) ;
-		movimenracao2.setConta(conta);
+		Movimentacao movimentacao2 = new Movimentacao() ; 
+		movimentacao2.setDescricao("Viagem A DF ");
+		movimentacao2.setTipoMovimentacao(TipoMovimentacao.SAIDA);
+		movimentacao2.setData(LocalDateTime.now());
+		movimentacao2.setValor(new BigDecimal(1403.02));
+		movimentacao2.setCategorias(Arrays.asList(categoria, categoria2)) ;
+		movimentacao2.setConta(conta);
 
 		
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("contas");
@@ -49,8 +49,8 @@ public class TestaRelacionamentoMovimentacaoCategoria {
 		
 		em.persist(categoria);
 		em.persist(categoria2);
-		em.persist(movimenracao);
-		em.persist(movimenracao2);
+		em.persist(movimentacao);
+		em.persist(movimentacao2);
 		
 		em.getTransaction().commit();
 		em.close();
