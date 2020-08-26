@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.casadocodigo.loja.daos.ProdutoDAO;
 import br.com.casadocodigo.loja.models.Produto;
@@ -29,15 +30,24 @@ public class ProdutosController {
 	}	
 	@RequestMapping( method = RequestMethod.POST )
 	//public String grava(String titulo , String descricao, int paginas) {
-	public String grava(Produto produto) {
+	public ModelAndView grava(Produto produto, RedirectAttributes redirectAttributes) {
 		System.out.println(".=+=+.=+.=+.=+.=+.=+.=+.=+.=+.=+.=+.=+.=+.=+.");
 //		System.out.println("Titulo......:-> " + titulo);
 //		System.out.println("Descrição...:-> " + descricao);
 //		System.out.println("Páginas.....:-> " + paginas);		
 		System.out.println(produto);
 		
+		
 		produtoDao.gravar(produto);
-		return "produtos/ok";		
+		
+//		ModelAndView modelAndView = new ModelAndView("redirect:produtos");
+		redirectAttributes.addFlashAttribute("sucesso", "Agora SIM, produto \""+produto.getTitulo() + "\" Cadastrado com muito, mas muito sucesso") ;
+//		modelAndView.addObject("sucesso", "Agora SIM, produto "+produto.getTitulo() + " Cadastrado com muito, mas muito sucesso");
+//		return modelAndView ;
+		return new ModelAndView("redirect:produtos");
+			
+//		return listar () ;
+//		return new ModelAndView("redirect:produtos") ;
 	}
 	
 	@RequestMapping( method = RequestMethod.GET )

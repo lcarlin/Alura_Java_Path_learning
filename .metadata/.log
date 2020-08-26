@@ -8308,3 +8308,15 @@ java.io.IOException: Unable to start language server: HTML Language Server: Proc
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2020-08-26 16:16:36.684
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-08-26 16:46:17.332
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-26 16:46:33.619
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-26 16:46:33.620
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-26 16:46:33.620
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT

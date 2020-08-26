@@ -10,6 +10,7 @@
 </head>
 <body>
 <h1>Lista de produtos já cadastrados.</h1>
+<div>${sucesso }</div>
 	<table>
 		<tr>
 			<td>Título</td>
