@@ -8,7 +8,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String index () {
 		System.out.println("-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-");
-		System.out.println("Entrei a home da casa do código");
+		System.out.println("Entrei em A Home de A Casa de O Código");
 		return "home" ;
 		
 	}
