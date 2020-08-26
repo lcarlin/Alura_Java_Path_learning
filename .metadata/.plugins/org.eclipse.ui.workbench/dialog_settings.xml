@@ -20,14 +20,13 @@
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="2"/>
+			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="generate ge"/>
-			<item value="cg"/>
+			<item value="gett"/>
 			<item value="switch view"/>
 			<item value="switch"/>
 			<item value="server"/>
