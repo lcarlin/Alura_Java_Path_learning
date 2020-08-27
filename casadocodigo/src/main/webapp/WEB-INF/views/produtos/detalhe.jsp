@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -36,7 +38,7 @@
 				<nav id="main-nav">
 
 					<ul class="clearfix">
-						<li><a href="/carrinho" rel="nofollow">Carrinho</a></li>
+						<li><a href="/carrinho" rel="nofollow">Carrinho (${carrinhoCompras.quantidade }) </a></li>
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre Nós</a></li>
 						<li><a href="/pages/perguntas-frequentes" rel="nofollow">Perguntas Frequentes</a></li>
 					</ul>
@@ -71,7 +73,7 @@
 		</header>
 
 		<section class="buy-options clearfix">
-			<form action="/carrinho/add" method="post" class="container">
+			<form action='<c:url value="/carrinho/add"/> ' method="post" class="container">
 				<input type="hidden" value="${produto.id }" name="produtoId" >
 				<ul id="variants" class="clearfix">
 				<c:forEach items="${produto.precos }" var="preco">				
@@ -87,7 +89,8 @@
 						</li>
 				</c:forEach>
 				</ul>
-				<button type="submit" class="submit-image icon-basket-alt" title="${produto.titulo }"></button>
+				<button type="submit" class="submit-image icon-basket-alt" alt= "Compre Agora, Já, NOW! " title="Compre agora :-> ${produto.titulo } !!!"></button>
+			    
 			</form>
 		</section>
 
@@ -102,11 +105,8 @@
 
 			<section class="data product-detail">
 				<h2 class="section-title">Dados do livro:</h2>
-				<p>
-					Número de páginas: <span>${produto.paginas }</span>
-				</p>
-				<p></p>
-				<p>Data de publicação: <span>${produto.dataLancamento }</span></p>
+				<p> Número de páginas: <span>${produto.paginas }</span> </p>				
+				<p>Data de publicação: <span> <fmt:formatDate pattern= "dd/MM/yyyy" value = "${produto.dataLancamento.time }" /> </span></p>
 				<p>
 					Encontrou um erro? <a href='/submissao-errata' target='_blank'>Submeta uma errata</a>
 				</p>
