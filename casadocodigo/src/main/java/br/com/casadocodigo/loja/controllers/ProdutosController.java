@@ -32,7 +32,7 @@ public class ProdutosController {
 	}
 	
 	@RequestMapping("/form")
-	public ModelAndView form () {
+	public ModelAndView form (Produto produto) {
 		ModelAndView modelAndView = new ModelAndView("produtos/form") ;
 		modelAndView.addObject("tipos", TipoPreco.values() );
 		
@@ -48,14 +48,14 @@ public class ProdutosController {
 //		System.out.println("Páginas.....:-> " + paginas);
 		
 		if ( result.hasErrors()) {
-			return form () ;
+			return form (produto) ;
 		}
 		System.out.println(produto);
 		
 		produtoDao.gravar(produto);
 		
 //		ModelAndView modelAndView = new ModelAndView("redirect:produtos");
-		redirectAttributes.addFlashAttribute("sucesso", "Agora SIM, produto \""+produto.getTitulo() + "\" Cadastrado com muito, mas muito sucesso") ;
+		redirectAttributes.addFlashAttribute("sucesso", "Agora SIM, produto \""+produto.getTitulo() + "\" Cadastrado com muito, mas muito sucesso, sob o ID de Numero -> " + produto.getId()) ;
 //		modelAndView.addObject("sucesso", "Agora SIM, produto "+produto.getTitulo() + " Cadastrado com muito, mas muito sucesso");
 //		return modelAndView ;
 		return new ModelAndView("redirect:produtos");

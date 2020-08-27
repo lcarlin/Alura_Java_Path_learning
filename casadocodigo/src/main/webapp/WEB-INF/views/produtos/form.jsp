@@ -8,30 +8,38 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FORM.jsp - LIvros: Java, And-roid, Ruby , PHP e muito + 	em A Casa de O Cóodigo</title>
+<title>FORM.jsp - LIvros: Java, And-roid, Ruby , PHP e muito + em A Casa de O Cóodigo</title>
 </head>
 <body>
-	
-	<form:form action="${s:mvcUrl('PC#grava').build()}" method="POST" commandName="produto">
+
+	<form:form action="${s:mvcUrl('PC#grava').build()}" method="POST"
+		commandName="produto">
 		<div>
-			<label>Titulo</label> <input type="text" name="titulo">
+			<label>Titulo</label> 
+			<form:input  path="titulo"/>
 			<form:errors path="titulo" />
 		</div>
 		<div>
 			<label>Descricao</label>
-			<textarea rows="10 " cols="20" name="descricao"> </textarea>
+			<form:textarea rows="10 " cols="20" path="descricao"/> 
 			<form:errors path="descricao" />
 		</div>
 		<div>
-			<label>QTD Paginas</label> <input type="text" name="paginas">
+			<label>QTD Paginas</label> 
+			<form:input  path="paginas" />
 			<form:errors path="paginas" />
+		</div>
+		<div>
+			<label>Data de LAnçamento</label> 
+			<form:input  path="dataLancamento" />
+			<form:errors path="dataLancamento" />
 		</div>
 
 		<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
 			<div>
-				<label>${tipoPreco}</label> <input type="text"
-					name="precos[${status.index}].valor" /> <input type="hidden"
-					name="precos[${status.index}].tipo" value="${tipoPreco}" />
+				<label>${tipoPreco}</label> 
+					<form:input  path="precos[${status.index}].valor" /> 
+					<form:hidden path="precos[${status.index}].tipo" value="${tipoPreco}" />
 			</div>
 		</c:forEach>
 
