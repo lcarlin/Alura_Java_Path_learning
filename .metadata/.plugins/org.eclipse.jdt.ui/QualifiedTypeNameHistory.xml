@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.EnableWebMvc"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
-<fullyQualifiedTypeName name="br.com.casadocodigo.loja.controllers.HomeController"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-<fullyQualifiedTypeName name="br.com.casadocodigo.loja.daos.ProdutoDAO"/>
 <fullyQualifiedTypeName name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"/>
 <fullyQualifiedTypeName name="org.springframework.orm.jpa.JpaVendorAdapter"/>
 <fullyQualifiedTypeName name="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
@@ -30,8 +21,6 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.web.filter.CharacterEncodingFilter"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
 <fullyQualifiedTypeName name="java.lang.Error"/>
 <fullyQualifiedTypeName name="org.springframework.validation.ValidationUtils"/>
@@ -48,7 +37,6 @@
 <fullyQualifiedTypeName name="org.springframework.format.support.DefaultFormattingConversionService"/>
 <fullyQualifiedTypeName name="org.springframework.format.datetime.DateFormatterRegistrar"/>
 <fullyQualifiedTypeName name="org.springframework.format.datetime.DateFormatter"/>
-<fullyQualifiedTypeName name="br.com.casadocodigo.loja.models.Produto"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartRequest"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
@@ -57,7 +45,19 @@
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="br.com.casadocodigo.loja.infra.FileSaver"/>
+<fullyQualifiedTypeName name="br.com.casadocodigo.loja.daos.ProdutoDAO"/>
+<fullyQualifiedTypeName name="br.com.casadocodigo.loja.models.Produto"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="br.com.casadocodigo.loja.controllers.CarrinhoComprasController"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="br.com.casadocodigo.loja.models.CarrinhoCompras"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.springframework.web.context.WebApplicationContext"/>
 </qualifiedTypeNameHistroy>

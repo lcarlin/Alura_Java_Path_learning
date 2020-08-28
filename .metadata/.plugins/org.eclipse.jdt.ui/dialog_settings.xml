@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
-	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-14"/>
+	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="J2SE-1.3"/>
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\luizc\eclipse-workspace\loja-virtual-repository\lib"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="false"/>
@@ -34,6 +34,9 @@
 		<item key="LimitValue" value="10"/>
 		<item key="SkipNull" value="false"/>
 		<item key="ToStringTemplateSelected" value="0"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="false"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
@@ -164,8 +167,8 @@
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="JavaBuildConfigurationBlock">
-		<item key="expanded0" value="true"/>
-		<item key="expanded1" value="false"/>
+		<item key="expanded0" value="false"/>
+		<item key="expanded1" value="true"/>
 		<item key="expanded2" value="false"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
@@ -200,6 +203,13 @@
 		<item key="DIALOG_Y_ORIGIN" value="68"/>
 		<item key="DIALOG_WIDTH" value="516"/>
 		<item key="DIALOG_HEIGHT" value="691"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="132"/>
+		<item key="DIALOG_WIDTH" value="516"/>
+		<item key="DIALOG_HEIGHT" value="594"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
