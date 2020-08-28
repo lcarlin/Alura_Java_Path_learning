@@ -12,6 +12,7 @@
 <body>
 <h1>Lista de produtos já cadastrados.</h1>
 <div>${sucesso }</div>
+<div>${falha }</div>
 	<table>
 		<tr>
 			<td>Título</td>
