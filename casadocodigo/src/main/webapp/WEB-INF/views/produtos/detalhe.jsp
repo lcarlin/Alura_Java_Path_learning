@@ -48,7 +48,7 @@
 	</header>
 	<nav class="categories-nav">
 		<ul class="container">
-			<li class="category"><a href="http://www.casadocodigo.com.br">Home</a></li>
+			<li class="category"><a href="http://localhost:8080/casadocodigo/">Home</a></li>
 			<li class="category"><a href="/collections/livros-de-agile"> Agile </a></li>
 			<li class="category"><a href="/collections/livros-de-front-end"> Front End </a></li>
 			<li class="category"><a href="/collections/livros-de-games"> Games </a></li>

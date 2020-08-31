@@ -140,5 +140,18 @@
 			<version>2.5.1</version>
 		</dependency>
 
+		<!-- Genrenciador de cachê do Gu-ó-glio -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.0.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 </project>
