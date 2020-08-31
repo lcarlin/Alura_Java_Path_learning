@@ -20,7 +20,9 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -34,7 +36,7 @@ import br.com.casadocodigo.loja.models.CarrinhoCompras;
 @EnableWebMvc
 @ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class })
 @EnableCaching
-public class AppWebConfiguration {
+public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 	@Bean
 	public InternalResourceViewResolver internalResourceViewResolver() {
@@ -93,15 +95,19 @@ public class AppWebConfiguration {
 		List<ViewResolver> viewResolvers = new ArrayList <> () ; 
 		viewResolvers.add(internalResourceViewResolver());
 		viewResolvers.add( new JsonViewResolver() );
-		
-		
-		
+			
 		ContentNegotiatingViewResolver resolver = new ContentNegotiatingViewResolver();
 		resolver.setViewResolvers(viewResolvers);
 		resolver.setContentNegotiationManager(manager);
 		// resolver.setDefaultViews(viewResolvers);
 		
-		return resolver  ;
-		
+		return resolver  ;		
+	}
+	
+	@Override
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		// TODO Auto-generated method stub
+		// super.configureDefaultServletHandling(configurer);
+		configurer.enable(); 
 	}
 }
