@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="CCC"/>
+		<item key="selection" value="carrinho"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="carrinho"/>
+			<item value="carrinho/add"/>
+			<item value="c:url"/>
+			<item value="buy-opt"/>
+			<item value="8080"/>
+			<item value="home"/>
+			<item value="GetUserName"/>
+			<item value="casadocodigo/"/>
+			<item value="cart"/>
+			<item value="carri"/>
+			<item value="permiss"/>
+			<item value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7"/>
+			<item value="foreac"/>
 			<item value="ccc"/>
 			<item value="pagamentoController"/>
-			<item value="finaliza"/>
-			<item value="getTotalo"/>
-			<item value="main"/>
-			<item value="carrinho"/>
-			<item value="seu"/>
-			<item value="compre"/>
-			<item value="compr"/>
-			<item value="comp"/>
-			<item value="carri"/>
-			<item value="compra"/>
-			<item value="dataLanca"/>
-			<item value="descricao"/>
-			<item value="preco.valor"/>
 		</list>
 		<list key="replacehistory">
+			<item value="resources/"/>
 			<item value="saldo"/>
 			<item value="titular"/>
 			<item value="numero"/>

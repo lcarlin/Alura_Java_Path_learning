@@ -8,9 +8,7 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.create.getter.setter"/>
-			<item value="org.eclipse.jdt.ui.edit.text.java.generate.tostring"/>
 			<item value="org.eclipse.ui.window.nextView"/>
 			<item value="org.eclipse.ui.file.openWorkspace"/>
 			<item value="org.eclipse.wst.server.ui.ServersView"/>
@@ -19,23 +17,16 @@
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
-			<item value="org.eclipse.ui.commands"/>
-			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
-			<item value="2"/>
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="hashc"/>
-			<item value="gett"/>
-			<item value="g"/>
-			<item value="tostri"/>
+			<item value="ggas"/>
 			<item value="switch view"/>
 			<item value="switch"/>
 			<item value="server"/>

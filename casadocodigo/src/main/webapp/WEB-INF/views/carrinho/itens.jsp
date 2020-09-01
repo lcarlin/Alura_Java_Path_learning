@@ -26,7 +26,7 @@
 <link href="${contextPath}resources/css/responsive-style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="${contextPath}resources/css/guia-do-programador-style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="${contextPath}resources/css/produtos.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="canonical" href="http://www.casadocodigo.com.br/" />
+<link rel="canonical" href="http://localhost:8080/casadocodigo" />
 </head>
 <body>
 
@@ -47,7 +47,7 @@
 	
 	<nav class="categories-nav">
 		<ul class="container">
-			<li class="category"><a href="http://www.casadocodigo.com.br">Home</a></li>
+			<li class="category"><a href="http://localhost:8080/casadocodigo">Home</a></li>
 			<li class="category"><a href="/collections/livros-de-agile"> Agile </a></li>
 			<li class="category"><a href="/collections/livros-de-front-end"> Front End </a></li>
 			<li class="category"><a href="/collections/livros-de-games"> Games </a></li>
@@ -124,7 +124,7 @@
 		</ul>
 
 		<h2>
-			<a href="http://www.casadocodigo.com.br">Veja todos os livros que publicamos!</a>
+			<a href="${contextPath}produtos">Veja todos os livros que publicamos!</a>
 		</h2>
 	</section>
 
