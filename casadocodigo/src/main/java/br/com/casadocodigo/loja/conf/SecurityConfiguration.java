@@ -23,17 +23,33 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		// super.configure(auth);
 		// primeiro faça os bloqueios
 		// depois vai liberando o que precisa
+//		http.authorizeRequests()
+//			.antMatchers("/produtos/form").hasRole("ADMIN")
+//			.antMatchers("/carrinho/**").permitAll()
+//			.antMatchers(HttpMethod.POST, "/produtos").hasRole("ADMIN")
+//			.antMatchers(HttpMethod.GET, "/produtos").hasRole("ADMIN")
+//			.antMatchers("/produtos/**").permitAll()
+//			.antMatchers("/resources/**").permitAll()
+//			.antMatchers("/").permitAll()
+//			.anyRequest().authenticated()			
+//			.and().formLogin().loginPage("/login").permitAll()
+//			.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+
 		http.authorizeRequests()
-			.antMatchers("/produtos/form").hasRole("ADMIN")
-			.antMatchers("/carrinho/**").permitAll()
-			.antMatchers(HttpMethod.POST, "/produtos").hasRole("ADMIN")
-			.antMatchers(HttpMethod.GET, "/produtos").hasRole("ADMIN")
-			.antMatchers("/produtos/**").permitAll()
-			.antMatchers("/resources/**").permitAll()
-			.antMatchers("/").permitAll()
-			.anyRequest().authenticated()			
-			.and().formLogin().loginPage("/login").permitAll()
-			.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+		.antMatchers("/produtos/form").hasRole("ADMIN")
+		.antMatchers("/produtos").hasRole("ADMIN")
+		.antMatchers("/produtos/").hasRole("ADMIN")
+		.antMatchers("/produtos/**").permitAll()
+		.antMatchers("/carrinho/**").permitAll()	
+		.antMatchers("/pagamento/**").permitAll()	
+		.antMatchers("/").permitAll()
+		.anyRequest().authenticated()
+		.and()
+			.formLogin().loginPage("/login").defaultSuccessUrl("/produtos").permitAll()
+		.and()
+			.logout()
+            .logoutRequestMatcher(new AntPathRequestMatcher("/logout")).permitAll() 
+            .logoutSuccessUrl("/login");
 	}
 	
 	@Override
