@@ -2,6 +2,7 @@ package br.com.casadocodigo.loja.conf;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.cache.CacheManager;
@@ -15,6 +16,8 @@ import org.springframework.format.datetime.DateFormatter;
 import org.springframework.format.datetime.DateFormatterRegistrar;
 import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
@@ -37,9 +40,21 @@ import br.com.casadocodigo.loja.daos.ProdutoDAO;
 import br.com.casadocodigo.loja.infra.FileSaver;
 import br.com.casadocodigo.loja.models.CarrinhoCompras;
 
+
+//https://cursos.alura.com.br/forum/topico-dica-se-continuar-a-aparecer-failed-to-load-applicationcontext-80779
+/*
+ * Se mesmo depois de todos os passos ainda ficar aparecendo Failed to load ApplicationContext é justamente por que na classe "~AppWebconfiguration~" 
+ * nós utilizamos a anotação @EnableCaching, e justamente essa anotação vai fazer com que o teste possua uma CacheResolver e na classe AppWebconfiguration 
+ * nós não implementamos esse método.  
+ *	A solução foi comentar a anotação para efeito de teste no JUnit.
+ *	Eu cheguei até olhar a solução no StackOverFlow, porém não entendi muito bem as credenciais que eles estavam utilizando.
+ *	Fica a dica!
+ * 
+ */
+
 @EnableWebMvc
 @ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class })
-// @EnableCaching   // desabilitar essa TAG para testes 
+@EnableCaching   // desabilitar essa TAG para profiles de  testes 
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 	@Bean
@@ -123,5 +138,22 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 	@Bean
 	public LocaleResolver localeResolver () {
 		return new CookieLocaleResolver() ;
+	}
+	
+	@Bean
+	public MailSender mailSender(){
+	    JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+
+	    mailSender.setHost("smtp.gmail.com");
+	    mailSender.setUsername("cg6658@gmail.com");
+	    mailSender.setPassword("*****************");
+	    mailSender.setPort(587);
+
+	    Properties mailProperties = new Properties();
+	    mailProperties.put("mail.smtp.auth", true);
+	    mailProperties.put("mail.smtp.starttls.enable", true);
+
+	    mailSender.setJavaMailProperties(mailProperties);
+	    return mailSender;
 	}
 }

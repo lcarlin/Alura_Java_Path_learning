@@ -36,13 +36,13 @@
 	        
 	      </ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">
-				<!-- 	<security:authentication property="principal.username" /></a></li> -->
+				<li><a href="#"> </a></li>
+				
 				    <security:authentication property="principal" var="usuario"/>
         				Usuário: ${usuario.username}
 			</ul>
 
-		</div><!-- /.navbar-collapse -->
+		</div>
 	  </div>
 	</nav>
 
@@ -55,12 +55,16 @@
 			<tr>
 				<th>Título</th>
 				<th>Descrição</th>
+				<th>Preços</th>
 				<th>Páginas</th>
 			</tr>
 			<c:forEach items="${produtos }" var="produto">
 				<tr>
-					<td><a href="${s:mvcUrl('PC#detalhe').arg(0, produto.id).build() }">${produto.titulo }</a> </td>
+					<td>
+						<a href="${s:mvcUrl('PC#detalhe').arg(0, produto.id).build() }" > ${produto.titulo }  
+					</td>
 					<td>${produto.descricao }</td>
+					<td>${produto.precos }</td>
 					<td>${produto.paginas }</td>
 				</tr>
 			</c:forEach>

@@ -90,6 +90,7 @@ public class ProdutosController {
 		ModelAndView modelAndView = new ModelAndView("produtos/detalhe");
 		Produto produto = produtoDao.find(id);
 		modelAndView.addObject("produto", produto);
+		// if (true) throw new RuntimeException("Excessão generica ocorrrendo ");
 		
 		return modelAndView ; 
 	}
@@ -99,5 +100,5 @@ public class ProdutosController {
 	public Produto detalheJson (@PathVariable ("id") Integer id ) {
 		return produtoDao.find(id);
 	}
-	
+
 }

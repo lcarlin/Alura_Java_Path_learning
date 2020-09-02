@@ -6,6 +6,9 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Preco {
+	private BigDecimal valor ;
+	private TipoPreco tipo ;
+	
 	public BigDecimal getValor() {
 		return valor;
 	}
@@ -18,7 +21,12 @@ public class Preco {
 	public void setTipo(TipoPreco tipo) {
 		this.tipo = tipo;
 	}
-	private BigDecimal valor ;
-	private TipoPreco tipo ;
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.tipo.name() + " - " + this.valor;
+	}
+	
 
 }
