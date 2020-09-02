@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="carrinho"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="junit"/>
+			<item value="fmt"/>
+			<item value="remove-item"/>
+			<item value="finaliz"/>
+			<item value="c:"/>
+			<item value="header"/>
+			<item value="body"/>
 			<item value="carrinho"/>
 			<item value="carrinho/add"/>
 			<item value="c:url"/>
@@ -16,13 +23,6 @@
 			<item value="home"/>
 			<item value="GetUserName"/>
 			<item value="casadocodigo/"/>
-			<item value="cart"/>
-			<item value="carri"/>
-			<item value="permiss"/>
-			<item value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7"/>
-			<item value="foreac"/>
-			<item value="ccc"/>
-			<item value="pagamentoController"/>
 		</list>
 		<list key="replacehistory">
 			<item value="resources/"/>
