@@ -54,7 +54,7 @@ import br.com.casadocodigo.loja.models.CarrinhoCompras;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class })
-@EnableCaching   // desabilitar essa TAG para profiles de  testes 
+// @EnableCaching   // desabilitar essa TAG para profiles de  testes 
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 	@Bean
@@ -149,9 +149,9 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 	    mailSender.setPassword("*****************");
 	    mailSender.setPort(587);
 
-	    Properties mailProperties = new Properties();
-	    mailProperties.put("mail.smtp.auth", true);
-	    mailProperties.put("mail.smtp.starttls.enable", true);
+	    Properties mailProperties = new Properties();	      
+	    mailProperties.setProperty("mail.smtp.auth", "true");
+	    mailProperties.setProperty("mail.smtp.starttls.enable", "true");
 
 	    mailSender.setJavaMailProperties(mailProperties);
 	    return mailSender;

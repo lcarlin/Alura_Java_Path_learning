@@ -14,6 +14,15 @@ public class Role implements GrantedAuthority{
 	@Id
 	private String nome;
 
+	public Role() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Role(String nome) {
+		// TODO Auto-generated constructor stub
+		this.nome = nome ;
+	}
+
 	public String getNome() {
 		return nome;
 	}

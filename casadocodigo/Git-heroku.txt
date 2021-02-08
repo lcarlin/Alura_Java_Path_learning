@@ -1,0 +1,8 @@
+git init
+git add -A
+heroku apps:create cdcspringmvc-lcarlin
+
+git add .
+
+git commit -m "Configurações de prod"
+git push heroku master
